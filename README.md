@@ -8,8 +8,6 @@
 
 ##展示图片：
 
-![image-20200422165102289](C:\Users\99724\AppData\Roaming\Typora\typora-user-images\image-20200422165102289.png)
-
-![image-20200422165152435](C:\Users\99724\AppData\Roaming\Typora\typora-user-images\image-20200422165152435.png)
-
-![image-20200422165218529](C:\Users\99724\AppData\Roaming\Typora\typora-user-images\image-20200422165218529.png)
+https://s1.ax1x.com/2020/04/22/JNUQXT.png
+https://wx1.sbimg.cn/2020/04/22/image-20200422165152435.png
+https://wx2.sbimg.cn/2020/04/22/image-20200422165218529.png
