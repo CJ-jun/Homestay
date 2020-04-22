@@ -1,0 +1,69 @@
+<!--pages/index/collection/collection.wxml-->
+<!-- 收藏 -->
+<view class='collection-con'>
+    <view class='recommend-city-li'>
+        <view class='recommend-img'>
+            <image src='https://ae01.alicdn.com/kf/Hdb91d27b568d4926bf722627f1313f34R.jpg'></image>
+        </view>
+        
+        <view class='recommend-city-li-foot'>
+            <view class='recommend-city-li-foot1'>
+                <text>单人房</text>
+                <image src="/image/shoucang-1.png"></image>
+            </view>
+            <view class='recommend-city-li-foot2'>
+                <view class='recommend-left'>
+                    <image src='/image/store.png'></image>
+                    <text>距我0.1公里</text>
+                </view>
+                <view class='recommend-right'>
+                    <text>¥ 99</text>
+                </view>
+            </view>
+        </view>
+    </view>
+
+    <view class='recommend-city-li'>
+        <view class='recommend-img'>
+            <image src='https://ae01.alicdn.com/kf/H3663afec5468414cbd835119c1ce207bc.jpg'></image>
+        </view>
+        
+        <view class='recommend-city-li-foot'>
+            <view class='recommend-city-li-foot1'>
+                <text>家庭套房</text>
+                <image src="/image/shoucang-1.png"></image>
+            </view>
+            <view class='recommend-city-li-foot2'>
+                <view class='recommend-left'>
+                    <image src='/image/store.png'></image>
+                    <text>距我0.1公里</text>
+                </view>
+                <view class='recommend-right'>
+                    <text>¥ 199</text>
+                </view>
+            </view>
+        </view>
+    </view>
+
+    <view class='recommend-city-li'>
+        <view class='recommend-img'>
+            <image src='https://ae01.alicdn.com/kf/H869e9f5713934945af916addfc3dff01o.jpg'></image>
+        </view>
+        
+        <view class='recommend-city-li-foot'>
+            <view class='recommend-city-li-foot1'>
+                <text>双人套房</text>
+                <image src="/image/shoucang-1.png"></image>
+            </view>
+            <view class='recommend-city-li-foot2'>
+                <view class='recommend-left'>
+                    <image src='/image/store.png'></image>
+                    <text>距我2.5公里</text>
+                </view>
+                <view class='recommend-right'>
+                    <text>¥ 109</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,114 @@
+<!--pages/goods/show.wxml-->
+<view class="section goods-show">
+    <view class="goods-swiper">
+        <swiper class="slide" indicator-dots="true" autoplay="true" interval="3000" duration="1000">
+            <block wx:for="{{goods.goods_slides}}" wx:key="index">
+                <swiper-item>
+                    <image src="{{item.slide_url}}" mode="widthFix" class="slide-image" data-id="{{item.id}}" bindtap="previewImage"/>
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
+    <!-- end-goods-swiper -->
+    <view class="goods-desp">
+        <view class="weui-cells">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">
+                    <view class="title">{{goods.header}}</view>
+                    <view class="desp">{{goods.description}}</view>
+                    <view class="meta">￥{{goods.meta}}</view>
+                </view>
+            </view>
+        </view>
+        <view class="weui-cells select">
+            <view class="weui-cell__bd on-sale">
+                <text class="weui-cell__subtitle">促销</text>
+                <text class="weui-cell__strong">无</text>
+                <text></text>
+            </view>
+            
+            
+        </view>
+    </view>
+    <view class="goods-intro">
+        <view class="tab-select">
+            <view class="brief"><text class="{{selected?'on':''}}" bindtap="selectBrief">概述</text></view>
+            <!-- 只需要一个描述即可 -->
+            <view class="parameter"><text class="{{selected1?'on':''}}" bindtap="selectParameter">评价</text></view>
+        </view>
+        <view class="brief-info{{selected?'show':''}}">
+            {{goods.intro}}
+            <image src="{{goods.img}}"></image>
+            <!-- <view>1.果冻蜡烛制作</view> -->
+            <!-- <image src="http://img.article.pchome.net/00/27/83/68/pic_lib/wm/1.jpg" mode="widthFix"/> -->
+            <!-- <view>果冻蜡烛又称水晶蜡烛，果冻蜡烛为手工蜡烛最重要的一个大类。因为它的外形酷似小朋友爱吃的果冻食品。果冻蜡烛如水晶般晶莹剔透，又如果冻般鲜艳润滑，盛装在造型各异的玻璃器皿中，又是一件具有观赏价值的艺术品。点燃之后，即明亮又神秘，堪称营造浪漫的燃情高手。果冻蜡烛具有无气泡，透明度好等优点</view>
+            <view>2.白字戏</view>
+            <image src="https://bkimg.cdn.bcebos.com/pic/42166d224f4a20a425c1c36f9d529822730ed0bf?x-bce-process=image/watermark,g_7,image_d2F0ZXIvYmFpa2U4MA==,xp_5,yp_5" mode="widthFix"/>
+            <view>白字戏具有民间祭祀戏剧活化石的功能，不仅对研究中国民间戏剧，而且对于重新认识中国戏剧史具有很高的历史价值。白字戏记载着历代海陆丰乡民的生活方式与文化思维模式，它是文化内涵丰富的传统乡土文化的主要载体，对中国传统文化、思想的研究有重要的价值。白字戏是国家级非物质文化遗产保护剧种，对白字戏现状的深人的田野调查以及对白字戏的系统研究于活化石的保护具有重要的现实意义</view> -->
+        </view> 
+        <!-- 评论 -->
+    <view class="parameter-info{{selected1?'show':''}}">
+
+      <view class='detail-comment'>
+        <view class='detail-comment-li'>
+          <view class='detail-comment-tit'>
+            <view class='detail-comment-tit-left'>
+              <image src='/image/3558.jpg'></image>
+              <text>电竞选手</text>
+            </view>
+            <view class='detail-comment-tit-right'>
+              <text>2020-4-18</text>
+            </view>
+          </view>
+          <view class='detail-comment-con'>
+            <view class='detail-comment-text'>
+              <text>下次再来！</text>
+            </view>
+            <view class='detail-comment-img'>
+              <image src='http://img5.cache.netease.com/travel/2012/5/24/20120524140217800ee.jpg'></image>
+              <image src='http://photocdn.sohu.com/20140515/Img399603015.jpg'></image>
+              <image src='http://img5.cache.netease.com/travel/2012/5/24/20120524140217800ee.jpg'></image>
+              <image src='http://photocdn.sohu.com/20140515/Img399603015.jpg'></image>
+            </view>
+          </view>
+        </view>
+
+        <view class='detail-comment-li'>
+          <view class='detail-comment-tit'>
+            <view class='detail-comment-tit-left'>
+              <image src='/image/124134975.jpg'></image>
+              <text>小鲜肉</text>
+            </view>
+            <view class='detail-comment-tit-right'>
+              <text>2020-4-18</text>
+            </view>
+          </view>
+          <view class='detail-comment-con'>
+            <view class='detail-comment-text'>
+              <text>美味有好吃！</text>
+            </view>
+            <view class='detail-comment-img'>
+              <image src='http://photocdn.sohu.com/20140515/Img399603015.jpg'></image>
+              <image src='http://img5.cache.netease.com/travel/2012/5/24/20120524140217800ee.jpg'></image>
+              <image src='http://photocdn.sohu.com/20140515/Img399603015.jpg'></image>
+              <image src='http://img5.cache.netease.com/travel/2012/5/24/20120524140217800ee.jpg'></image>
+            </view>
+          </view>
+        </view>
+
+        <button class='detail-comment-btn' bindtap='showCommentList'>查看更多</button>
+      </view>
+
+    </view>
+  </view>
+<!-- 尾部 -->
+    <view class="user-operation">
+        <view class="cart" bindtap="goCart">
+            <!-- <view ></view> -->
+            <text class="badge" wx:if="{{goods_num>0}}">{{goods_num}}</text>
+            <image src="../../assets/icons/cart.png" />
+        </view>
+        <view class="add-cart" bindtap="toSelect" data-id="{{goods.id}}">加入订单</view>
+        <view class="btn-buy-now" bindtap="checkOut">立即购买</view>
+    </view>
+</view>

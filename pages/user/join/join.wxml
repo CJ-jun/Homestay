@@ -1,0 +1,23 @@
+<!--pages/join/join.wxml-->
+<image class='banner' src='https://s1.ax1x.com/2020/04/21/JGOhwD.jpg'></image>
+
+<view class='block'>
+  <view class="block-title">公司简介</view>
+  <text class='block-desc'> 本公司致力于以民宿带动当地经济发展，并用市场化方式提供产品与服务获取一定的收入与盈利，从而来反哺本公司的公益事业，使其获得长足的发展。保持好公益性与经营性共融互通，利润和盈余是组织及公益事业发展的保障。
+新时代，因地制宜地有着新民宿文化，本公司的民宿的特点：既可以重新让空巢老人拾起当地非物质文化遗产的多元化传统手工艺，又可以让来往的旅客去了解当地现存的手工艺，吃喝玩乐当中留下的不只回忆，更有传播与传承。
+充分发挥互联网时代的现实意义，发挥传承特色文化底蕴，填补空巢老人精神世界空虚，带动当地的经济发展。我们公司不断砥砺前行，让空巢老人正视自身的价值，让独具特色的传统工艺焕发光彩，让无闻的乡村重展振兴翅膀。
+
+  </text>
+</view>
+<view class='block'>
+  <view class="block-title">联系我们</view>
+  <text class='block-desc'>地址：归来一宿客栈
+电话：+86-0310-6861118xx
+传真：+86-0310-6861118xx
+邮编：057150xx
+邮箱：xxxxx@163.com
+  </text>
+</view>
+<view class='footer'>
+  <button bindtap='tell'>电话咨询</button>
+</view>

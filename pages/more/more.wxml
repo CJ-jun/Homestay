@@ -1,0 +1,14 @@
+<!--pages/more/more.wxml-->
+<view class='items-list' wx:for="{{index_block}}" wx:key="{{item.id}}" wx:if="{{index!=2}}">
+  <view class="pro-item" wx:for="{{item.section}}" wx:key="index" wx:for-item="product">
+    <image class='pro-logo' src="{{product.goods_cover}}" ></image>
+    <view class='pro-body'>
+      <view class='title'>{{product.header}}</view>
+      <text class='pro-desc' >￥{{product.meta}}</text>
+      <view class='pro-footer'>
+        <button class='btn-ask' data-pid="{{product.id}}"  bindtap="showDetail"> 详情</button>
+        <button open-type="contact" class='btn-ask'> 咨询客服</button>
+      </view>
+    </view>
+  </view>
+</view>

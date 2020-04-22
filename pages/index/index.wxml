@@ -1,0 +1,70 @@
+<!--index.wxml-->
+<view class="container">
+	<!-- 顶部搜索栏 -->
+	<view class="section searchBar">
+		<view class="section searBar-box {{isTap?'tap':''}}">
+			<image src="../../assets/icons/search.png" mode="aspectFill" class="search-icon" />
+			<input type="text" name="searchBar" disabled="true" placeholder="搜索" placeholder-class="search-plac" bindtap="toSearch"
+			/>
+		</view>
+	</view>
+	<!-- end-section search searchBar -->
+
+	<!-- 首页轮播图 -->
+	<view class="section section-swiper">
+		<swiper class="slide" indicator-dots="{{true}}" autoplay="{{true}}" interval="2000" duration="1000" indicator-color="black" indicator-active-color="white">
+			<block wx:for="{{index_slides}}" wx:key="{{index}}">
+				<swiper-item bindtap="cjoin">
+					<image src="{{item.slide_url}}" mode="widthFix" class="slide-image" data-id="{{item.id}}" />
+				</swiper-item>
+			</block>
+		</swiper>
+	</view>
+  <!-- end-section section-swiper -->
+	
+<!-- 
+	分类栏 --> 
+	<view class="section navBar">
+		<view class="section nav-list" wx:for="{{nav_data}}" wx:key="index">
+			<navigator url="{{item.nav_urls}}" hover-class="none">
+				<view class="nav-item">
+					<image src="{{item.nav_img}}" class="item-img" />
+					<text class="item-text">{{item.nav_title}}</text>
+				</view>
+			</navigator>
+		</view>
+	</view>
+  
+<!-- <推荐住房> -->
+<view class='items-list' wx:for="{{index_block}}" wx:key="{{item.id}}" wx:if="{{index==2}}">
+  <view class="pro-item" wx:for="{{item.section}}" wx:key="index" wx:for-item="product">
+    <image class='pro-logo' src="{{product.goods_cover}}" ></image>
+    <view class='pro-body'>
+      <view class='title'>{{product.header}}</view>
+      <text class='pro-desc' >￥{{product.meta}}</text>
+      <view class='pro-footer'>
+        <button class='btn-ask' data-pid="{{product.id}}"  bindtap="showDetail"> 详情</button>
+        <button open-type="contact" class='btn-ask'> 咨询客服</button>
+      </view>
+    </view>
+  </view>
+</view>
+    <!-- 推荐小吃 -->
+<view class="recommend-menu">
+  <view class="recommend-title">
+    <text class="recommend-text1">热门推荐</text>
+    <text class="recommend-text2">~~~~特产~~~~</text>
+  </view>
+  
+  <view class="recommend-veget">
+  <scroll-view class="scroll-view" scroll-x="true" style="100%" wx:for="{{index_block}}" wx:key="{{item.id}}" wx:if="{{index==0}}">
+    <view class="scroll-view-item" wx:for="{{item.section}}" wx:key="index" wx:for-item="product" >
+      <image src="{{product.goods_cover}}" data-pid="{{product.id}}" mode="aspectFill" bindtap="showDetail"> </image>
+    </view>
+  </scroll-view>
+  </view>
+</view>
+
+  <!-- end-section navBar -->
+</view>
+<button bindtap='look'>查看更多</button>

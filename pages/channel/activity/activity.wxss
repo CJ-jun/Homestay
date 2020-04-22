@@ -1,0 +1,23 @@
+/* pages/video/video.wxss */
+page{
+  background: #b1aeae;
+}
+.video-list{
+  box-shadow: 0 8rpx 17rpx 0 rgba(7, 17, 27, 0.1);
+  margin: 35rpx 25rpx;
+  padding: 20rpx;
+  border-radius: 10rpx;
+  background: #fff;
+}
+.video-list>video{
+  width: 100%;
+  margin-top: 20rpx;
+}
+.video-title{
+  font-size: 36rpx;
+  color:#333;
+}
+.video-time{
+  font-size: 26rpx;
+  color: #979797;
+}

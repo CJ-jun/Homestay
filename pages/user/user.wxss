@@ -1,0 +1,79 @@
+/* pages/user/user.wxss */
+/* 我的 */
+
+/* 头部 */
+
+.btn1{
+  width: 200rpx;
+  height: 200rpx;
+  margin-top: 120rpx;
+  margin-bottom: 120rpx;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  background:rgb(135, 170, 222)
+}
+.btn1 >text{
+    margin-top: 49rpx;
+}
+
+.user-head-bg {
+  height: 280rpx;
+}
+.head-bg-img {
+  width: 100%;
+  height: 400rpx;
+  opacity: 0.6;
+}
+.head-and-name {
+   text-align: center;  
+   margin-top: -15%;
+   position: relative;
+}
+.user-head-img {
+  width: 178rpx;
+  height: 178rpx;
+  border-radius: 50%;
+}
+.user-name {
+  font-size: 32rpx;
+}
+/* 菜单 */
+.grid-menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin-top: 240rpx;
+  margin-left: 40rpx;
+  margin-right: 40rpx; 
+  align-content: center;
+}
+.menu-item {
+  text-align: center;
+  width: 33%;
+  border-bottom: 8rpx solid #f0f0f0;
+}
+.menu-item-body {
+  margin-bottom: 20rpx;
+  margin-top: 20rpx;
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+  border-right: 8rpx solid #f0f0f0;
+}
+.company-presentation {
+  border-right: none;
+}
+.user-feedback {
+  border-bottom: none;
+}
+.FAQ {
+  border-bottom: none;
+}
+.menu-img {
+  width: 75rpx;
+  height: 75rpx;
+}
+.menu-name {
+  font-size: 32rpx;
+}

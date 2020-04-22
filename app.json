@@ -1,0 +1,57 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/search/search",
+    "pages/cart/cart",
+    "pages/user/user",
+    "pages/channel/activity/activity",
+    "pages/channel/quick/quick",
+    "pages/channel/collection/collection",
+    "pages/goods/show",
+    "pages/selectGoods/selectGoods",
+    "pages/addr/addr",
+    "pages/more/more",
+    "pages/qroom/collection",
+    "pages/user/FAQ/FAQ",
+    "pages/user/authentication/authentication",
+    "pages/user/authentication/face_detection/face_detection",
+    "pages/user/feedback/feedback",
+    "pages/user/information/information",
+    "pages/user/join/join",
+    "pages/user/money/money",
+    "pages/user/money/wallet_detail/wallet_detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FFFFC1",
+    "navigationBarTitleText": "归来一宿客栈",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#00d9ff",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index",
+        "iconPath": "assets/icons/home.png",
+        "selectedIconPath": "assets/icons/home_active.png"
+      },
+      {
+        "text": "订单",
+        "pagePath": "pages/cart/cart",
+        "iconPath": "assets/icons/cart.png",
+        "selectedIconPath": "assets/icons/cart_active.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/user/user",
+        "iconPath": "assets/icons/mine.png",
+        "selectedIconPath": "assets/icons/mine_active.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}
